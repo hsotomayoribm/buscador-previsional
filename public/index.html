@@ -25026,7 +25026,8 @@ a.cds--side-nav__link--current::before {
     <link rel="stylesheet" href="css/hs-style1.css" />
     <script>
       function mostrarBarra(){
-        document.getElementById('pgbar').style.visibility='visible';
+        document.getElementById('pgbar').classList.remove('is-hidden');
+        document.getElementById('pgbar').classList.add('is-active');
         console.log("mostrando barra")
       }
     </script>
@@ -25093,7 +25094,7 @@ a.cds--side-nav__link--current::before {
          </main>
          <table width="100%">
           <tr><td>
-            <div id="pgbar" style="visibility: hidden;" class="cds--progress-bar cds--progress-bar--big cds--progress-bar--default cds--progress-bar--indeterminate">
+            <div id="pgbar" class="cds--progress-bar cds--progress-bar--big cds--progress-bar--default cds--progress-bar--indeterminate is-hidden">
             <div class="cds--progress-bar__label" id="progress-bar-189">
               <span class="cds--progress-bar__label-text">Realizando la busqueda</span></div>
               <div class="cds--progress-bar__track" role="progressbar" aria-busy="true" aria-invalid="false" aria-labelledby="progress-bar-189"><div class="cds--progress-bar__bar"></div></div><div class="cds--progress-bar__helper-text">Por favor espera mientras discovery consigue los mejores resultados<div class="cds--visually-hidden" aria-live="polite" id="progress-bar-helper-190">Loading</div></div></div>
